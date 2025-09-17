@@ -1,0 +1,143 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #e63be0, #2193b0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  background:linear-gradient(135deg,#bf0eb9, #17b2d9);
+  border-radius: 20px;
+  padding: 30px;
+  width: 800px; 
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(74, 10, 185, 0.516);
+  text-align: center;
+  color: white;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 20px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 10px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search input {
+  padding: 10px;
+  width: 70%;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+}
+
+.search button {
+  padding: 10px;
+  border: none;
+  background: #483ae0;
+  color: white;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background: #1d50b0;
+}
+
+.result h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.result p {
+  margin: 6px 0;
+  font-size: 18px;
+}
+
+/* Forecast section */
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  gap: 10px;
+  flex-wrap: nowrap;   
+}
+
+
+.forecast-day {
+  flex: 1;
+  min-width: 100px; 
+  background: rgba(255, 255, 255, 0.15);
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.forecast-day:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(135deg,#e004d8, #05c5f6);
+}
+
+.forecast-day.active {
+  transform: translateY(-6px);
+  background: linear-gradient(135deg,#af139d, #217ec5);
+}
+
+.forecast-day img {
+  width: 40px;
+}
+
+
+.forecast-day p {
+  font-size: 12px;
+  margin: 4px 0;
+  word-wrap: break-word;
+  white-space: normal; 
+  text-overflow: ellipsis;
+}
+
+
+@media (max-width: 600px) {
+  .card {
+    width: 90%; 
+  }
+
+  .forecast {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .forecast-day {
+    width: 80%;
+    min-width: unset;
+  }
+}
