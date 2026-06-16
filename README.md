@@ -23,11 +23,9 @@ weather-app/
 
 # API Key
 This project uses OpenWeatherMap API.
-API key is already included in script.js:
-const apiKey = "cd1b7fdd98bf5c211071b8d5a4a0d577";
 
-If this API doesn't work go to this website https://home.openweathermap.org
-and change the API key in script.js file with new one 
+ for API Key you can visit this website https://home.openweathermap.org
+and replsce the API key in script.js 
 
 
 # How It Works
